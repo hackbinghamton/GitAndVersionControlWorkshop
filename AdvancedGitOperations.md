@@ -19,3 +19,9 @@ Sometimes you'll want to create a repository locally and only later upload it to
 Run `git init` in a local repository.
 Then run `git remote add origin https://github.com/<your-username>/<repository-name>`. A *remote* is a repository that is not in a *local* folder.
 Now try running `git push`. Unless you've edited your configuration, this won't work. Instead, try `git push --set-upstream origin main`.
+
+## Ignoring files
+Often we will have files in our repository that we never want to track: temporary files, swap files, or compiled executable files.
+To tell Git to ignore these files, we put their names in a file called `.gitignore` Try it out!
+
+We can also ignore patterns and directories: adding `*.swp` to your `.gitignore` will cause Git to ignore *any* file ending in `swp`, and if you have a directory called `build`, you can add `build` to your ignore list.
